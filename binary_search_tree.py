@@ -27,3 +27,13 @@ node15.left = node14
 node15.right = node19
 
 node19.left = node18
+
+#Traversing the tree
+
+def inOrder(node):
+    if node:
+        inOrder(node.left)
+        print(node.value)
+        inOrder(node.right)
+
+inOrder(root)
